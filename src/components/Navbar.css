@@ -1,0 +1,130 @@
+.header {
+    position: fixed;
+    height: 80px;
+    width: calc(100% - 120px);
+    top: 20px;
+    left: 40px;
+    right: 40px;
+    z-index: 10;
+    transition: .3s ease-in;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin: auto;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.header .logo .logo-gif {
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.header .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header .nav-menu a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-menu .contact-item a {
+    color: #2D66EE;
+}
+
+.header .nav-item {
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.header .nav-item a:hover {
+    color: #2D66EE;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 100px;
+    height: auto;
+    max-height: 50px;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .nav-item .contact-item {
+        display: none;
+    }
+
+    .header {
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-radius: 0;
+        padding: 0 10px;
+    }
+
+    .header .navbar {
+        max-width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 100%;
+        height: calc(100vh - 80px);
+        z-index: 999;
+        text-align: center;
+        transition: 0.3s ease;
+        padding: 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+
+    .header .navbar img {
+        width: 150px;
+    }
+}

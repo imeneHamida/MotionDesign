@@ -1,0 +1,62 @@
+.about {
+    width: 100vw;
+    min-height: 70vh;
+    background-color: #38B6FF;
+    background-image: url('../assets/images/NoisyBackground.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.text {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    word-wrap: break-word;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6); 
+}
+
+.text p {
+    line-height: 2;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+.gold-highlight {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.bold-highlight {
+    color: #f3f3f3;
+    font-weight: bold;
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
